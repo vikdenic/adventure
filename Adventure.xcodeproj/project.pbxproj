@@ -21,6 +21,8 @@
 		93CD884E1922A21F00D6A223 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CD88301922A21F00D6A223 /* UIKit.framework */; };
 		93CD88561922A21F00D6A223 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93CD88541922A21F00D6A223 /* InfoPlist.strings */; };
 		93CD88581922A21F00D6A223 /* AdventureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD88571922A21F00D6A223 /* AdventureTests.m */; };
+		93CD88621922A5F100D6A223 /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CD88611922A5F100D6A223 /* CheckMate.framework */; };
+		93CD88681922B07B00D6A223 /* ClearUpBoxesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD88671922B07B00D6A223 /* ClearUpBoxesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		93CD88531922A21F00D6A223 /* AdventureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdventureTests-Info.plist"; sourceTree = "<group>"; };
 		93CD88551922A21F00D6A223 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93CD88571922A21F00D6A223 /* AdventureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdventureTests.m; sourceTree = "<group>"; };
+		93CD88611922A5F100D6A223 /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CheckMate.framework; sourceTree = "<group>"; };
+		93CD88661922B07B00D6A223 /* ClearUpBoxesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearUpBoxesViewController.h; sourceTree = "<group>"; };
+		93CD88671922B07B00D6A223 /* ClearUpBoxesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearUpBoxesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93CD88621922A5F100D6A223 /* CheckMate.framework in Frameworks */,
 				93CD882F1922A21F00D6A223 /* CoreGraphics.framework in Frameworks */,
 				93CD88311922A21F00D6A223 /* UIKit.framework in Frameworks */,
 				93CD882D1922A21F00D6A223 /* Foundation.framework in Frameworks */,
@@ -101,6 +107,7 @@
 		93CD882B1922A21F00D6A223 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				93CD88611922A5F100D6A223 /* CheckMate.framework */,
 				93CD882C1922A21F00D6A223 /* Foundation.framework */,
 				93CD882E1922A21F00D6A223 /* CoreGraphics.framework */,
 				93CD88301922A21F00D6A223 /* UIKit.framework */,
@@ -119,6 +126,8 @@
 				93CD88421922A21F00D6A223 /* ViewController.m */,
 				93CD88441922A21F00D6A223 /* Images.xcassets */,
 				93CD88331922A21F00D6A223 /* Supporting Files */,
+				93CD88661922B07B00D6A223 /* ClearUpBoxesViewController.h */,
+				93CD88671922B07B00D6A223 /* ClearUpBoxesViewController.m */,
 			);
 			path = Adventure;
 			sourceTree = "<group>";
@@ -251,6 +260,7 @@
 			files = (
 				93CD88431922A21F00D6A223 /* ViewController.m in Sources */,
 				93CD883D1922A21F00D6A223 /* AppDelegate.m in Sources */,
+				93CD88681922B07B00D6A223 /* ClearUpBoxesViewController.m in Sources */,
 				93CD88391922A21F00D6A223 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +386,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Adventure/Adventure-Prefix.pch";
 				INFOPLIST_FILE = "Adventure/Adventure-Info.plist";
@@ -389,6 +403,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Adventure/Adventure-Prefix.pch";
 				INFOPLIST_FILE = "Adventure/Adventure-Info.plist";

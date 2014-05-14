@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *returnedTextLabel;
+@property (weak, nonatomic) IBOutlet UILabel *returnedTextLabel2;
 
 @end
